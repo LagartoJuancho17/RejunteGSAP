@@ -3,6 +3,7 @@
 :root {
   --light: #fff;
   --dark: #000;
+  --light-other: #99d6ff;
 }
 
 * {
@@ -182,9 +183,6 @@ a {
 
 
 /* GALLERY */
-#gallery2 h1{
-  font-size: 6rem;
-}
 section {
   position: relative;
   width: 100vw;
@@ -198,19 +196,26 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--light);
+  background-color: var(--light-other);
   color: var(--dark);
 }
 
 .intro h1,
 .outro h1 {
-  width: 50%;
   text-align: center;
 }
 
 .spotlight {
   background-color: var(--dark);
   color: var(--light);
+}
+
+.spotlight h1{
+  letter-spacing: 0.1rem;
+}
+
+.spotlighth1{
+  font-size: 4rem;
 }
 
 .spotlight-images,
@@ -248,16 +253,13 @@ section .img {
   width: 50%;
 }
 
-.spotlight-outro-header{
-  color: black;
-}
-
 .spotlight-intro-header {
   z-index: 1;
 }
 
 .spotlight-outro-header {
   z-index: 2;
+  color: black;
 }
 
 @media (max-width: 1000px) {
@@ -274,3 +276,13 @@ section .img {
   }
 }
 
+.spotlight-outro-header h1
+{
+  font-size: 3rem;
+  color: var(--light);
+}
+
+.spotlight-outro-header {
+  left: 28%;
+  text-align: left;
+}

@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
       preloaderImg,
       {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 1,
+        duration: 0.75,
         ease: "hop",
-        delay: index * 0.75,
+        delay: index * 0.25,
       },
       "-=5"
     );
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scale: 1,
         duration: 1.5,
         ease: "hop",
-        delay: index * 0.75,
+        delay: index * 0.25,
       },
       "-=5.25"
     );
